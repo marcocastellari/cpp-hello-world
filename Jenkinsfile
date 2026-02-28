@@ -25,7 +25,7 @@ pipeline {
                 echo 'Stage 2: Compiling with GCC'
                 echo '========================================='
                 sh '''
-                    ${CC} ${CFLAGS} -o hello gcc/hello.c
+                    ${CC} ${CFLAGS} -o hello src/hello.c
                     echo "Build completed successfully!"
                 '''
             }
